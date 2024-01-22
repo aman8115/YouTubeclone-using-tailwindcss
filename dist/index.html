@@ -11,32 +11,51 @@
     <header class="bg-blue-600 w-full static  ">
         <nav class=" w-full flex flex-row  justify-between fixed top-2"> 
         <div class=" mx-3 gap-3 flex flex-row w-fit">
-        <h1 class="font-bold ">&#9776;</h1>
-        <h1 class="font-bold "> <i  class="fa-brands fa-youtube text-red-600 0"></i>YouTube</h1>
+        <h1 class="font-bold rounded-xl hover:bg-slate-300 h-7 w-8 text-center">&#9776;</h1>
+        <h1 class="font-bold w-fit"> <i  class="fa-brands fa-youtube text-red-600 0"></i>YouTube</h1>
     </div>
-        <div class=" w-1/4 border border-blue-600 flex flex-row justify-between flex-wrap">
-        <span>Search</span>
-        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        <div class="hidden md:block">
+           <div class="flex  items-center justify-between">
+            <div class="  w-[26rem] h-8 border border-slate-400 flex flex-row justify-between flex-wrap rounded-2xl text-sm   ">
+                <span class="ml-3">Search</span>
+                <div class="bg-slate-100 mr-1 w-14 h-full rounded-lg flex items-center justify-between "> <span class="h-8 bg-slate-300 w-0.5 p-0.5"></span><i class="fa-solid fa-magnifying-glass  
+                  "></i></div>
+                 
+                </div>
+                <div class="ml-3 rounded-2xl w-1/12 h-7 text-center bg-slate-200"><span><i class="fa-solid fa-microphone"></i></span></div>
+                
+           </div>
         </div>
-        <div>
+       <div class="hidden md:block">
+        <div class="w-fit mr-4  flex flex-row gap-4">
             <span><i class="fa-solid fa-video "></i></span> 
             <span><i class="fa-solid fa-bell"></i></span>
             <span><i class="fa-solid fa-circle-user"></i></span>
+           
         </div>
+       </div>
+      <div class="md:hidden">
+        <div class="w-fit mr-4  flex flex-row gap-4">
+            <span><i class="fa-solid fa-tv "></i></span> 
+            <span><i class="fa-solid fa-bell"></i></span>
+           
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+      </div>
     </nav>
        
     </header>
     <sidebar class=" w-full hidden md:block">
         <div class="  mt-12 ml-5 flex flex-col ">
-           <div class="flex flex-col gap-3 text-sm"> <span class=" rounded-xl bg-slate-200 w-1/12 h-7 border border-slate-200 text-left"><i class="fa-sharp fa-solid fa-house mx-1.5 my-1.5"></i><span class="mx-2.5 my-2.5">Home</span></span>
-            <span class=" rounded-xl bg-slate-200 w-1/12 h-7 border border-slate-200 text-left"><i class="fa-sharp fa-solid fa-user mx-1.5 my-1.5"></i><span >Yourchannel</span></span>
-        <span class=" rounded-xl bg-slate-200 w-1/12 h-7 border border-slate-200 text-left " ><i class="fa-solid fa-clock-rotate-left mx-1.5 my-1.5 "></i><span class="mx-2 my-2">History</span></span>
-        <span class="rounded-xl bg-slate-200  border border-slate-200 w-1/12 h-7 text-left ">
+           <div class="flex flex-col gap-3 text-sm"> <span class=" rounded-xl hover:bg-slate-200 w-fit h-7 text-left"><i class="fa-sharp fa-solid fa-house mx-1.5 my-1.5"></i><span class="mx-2.5 my-2.5">Home</span></span>
+            <span class=" rounded-xl hover:bg-slate-200 w-fit h-7  text-left"><i class="fa-sharp fa-solid fa-user mx-1.5 my-1.5"></i><span >Yourchannel</span></span>
+        <span class=" rounded-xl hover:bg-slate-200 w-fit h-7  text-left " ><i class="fa-solid fa-clock-rotate-left mx-1.5 my-1.5 "></i><span class="mx-2 my-2">History</span></span>
+        <span class="rounded-xl hover:bg-slate-200  w-fit h-7 text-left ">
  
             
      <i class="fa-solid fa-video mx-1 my-1 "></i><span class="mx-1.5 my-1.5">Your videos</span></span>
-        <span class="rounded-xl bg-slate-200 border-slate-200 w-1/12"> <i class="fa-regular fa-clock mx-1 my-1"></i><span class="mx-1.5 my-.5">WatchLater</span></span>
-        <span class="rounded-xl bg-slate-200 border border-slate-200 w-1/12 h-7"><i class="fa-solid fa-thumbs-up mx-1 my-1"></i><span class="mx-1.5 my-1.5">Liked video</span></span>
+        <span class="rounded-xl hover:bg-slate-200 - w-fit"> <i class="fa-regular fa-clock mx-1 my-1"></i><span class="mx-1.5 my-.5">WatchLater</span></span>
+        <span class="rounded-xl hover:bg-slate-200  w-fit h-7"><i class="fa-solid fa-thumbs-up mx-1 my-1"></i><span class="mx-1.5 my-1.5">Liked video</span></span>
      </div>
      <div class="flex flex-col gap-3 text-sm">
         <h1>Explore</h1>
@@ -44,26 +63,30 @@
             <i class="fa-solid fa-bag-shopping"></i>
             
             Shopping</span>
-            <span class="rounded-xl bg-slate-200 border border-slate-200 w-1/12 h-7 text-left"><i class="fa-solid fa-music mx-1 my-1"></i><span class="mx-1.5 my.1.5">Music</span></span>
-            <span class="rounded-xl bg-slate-200 border border-slate-200 w-1/12 h-7 text-left"><i class="fa-solid fa-clapperboard mx-1 my-1 "></i><span class="mx-1.5 my1.5">Films</span></span>
-            <span class="rounded-xl bg-slate-200 border border-slate-200 w-1/12 h-7 text-left"><i class="fa-solid fa-gamepad clear-startmx-1 my-1"></i><span class="mx-1.5 my-1.5 ">gaming</span></span>
-            <span class="rounded-xl bg-slate-200 border border-slate-200 w-1/12 h-7 text-left"><i class="fa-solid fa-newspaper clear-startmx-1 my-1 "></i><span class="mx-1.5 my-1.5">news</span></span>
-            <span class="rounded-xl bg-slate-200 border border-slate-200 w-1/12 h-7 text-left"><i class="fa-solid fa-lightbulb mx-1 my-1 "></i><span class="mx-1.5 my-1.5">learning</span></span>
-            <span class="rounded-xl bg-slate-200 border border-slate-200 w-1/12 h-7 text-left">
+            <span class="rounded-xl hover:bg-slate-200  w-fit h-7 text-left"><i class="fa-solid fa-music mx-1 my-1"></i><span class="mx-1.5 my.1.5">Music</span></span>
+            <span class="rounded-xl hover:bg-slate-200 w-fit h-7 text-left"><i class="fa-solid fa-clapperboard mx-1 my-1 "></i><span class="mx-1.5 my1.5">Films</span></span>
+            <span class="rounded-xl hover:bg-slate-200   w-fit h-7 text-left"><i class="fa-solid fa-gamepad clear-startmx-1 my-1"></i><span class="mx-1.5 my-1.5 ">gaming</span></span>
+            <span class="rounded-xl hover:bg-slate-200  w-fit h-7 text-left"><i class="fa-solid fa-newspaper clear-startmx-1 my-1 "></i><span class="mx-1.5 my-1.5">news</span></span>
+            <span class="rounded-xl hover:bg-slate-200  w-fit h-7 text-left"><i class="fa-solid fa-lightbulb mx-1 my-1 "></i><span class="mx-1.5 my-1.5">learning</span></span>
+            <span class="rounded-xl hover:bg-slate-200   w-fit h-7 text-left">
                 <i class="fa-solid fa-tower-broadcast"></i>  <span class="mx-1.5 my-1.5"> Prodcasts</span>
                
                </span>
      </div>
      <div class="flex flex-col gap-3 text-sm">
         
-        <span class="rounded-xl bg-slate-200 border border-slate-200 w-1/12 h-7 text-left"><i class="fa-solid fa-gear mx-1 my-1 "></i><span class="mx-1.5 my-1.5">Settings</span></span>
-        <span class="rounded-xl bg-slate-200 border border-slate-200 w-fit h-7 text-left"><i class="fa-solid fa-flag mx-1 my-1"></i> <span class="mx-1.5 my-1.5 ">Report history</span></span>
-        <span class="rounded-xl bg-slate-200 border border-slate-200 w-fit h-7 text-left"><i class="fa-solid fa-circle-question mx-1 my-1"></i><span class="mx-1.5 my-1.5">Help</span></span>
-        <span class="rounded-xl bg-slate-200 border border-slate-200 w-fit h-7 text-left"><i class="fa-solid fa-exclamation xm-1 my-1"></i><span class="mx-1.5 my-1.5">Send feedback</span></span>
+        <span class="rounded-xl hover:bg-slate-200   w-fit h-7 text-left"><i class="fa-solid fa-gear mx-1 my-1 "></i><span class="mx-1.5 my-1.5">Settings</span></span>
+        <span class="rounded-xl hover:bg-slate-200  w-fit h-7 text-left"><i class="fa-solid fa-flag mx-1 my-1"></i> <span class="mx-1.5 my-1.5 ">Report history</span></span>
+        <span class="rounded-xl hover:bg-slate-200 w-fit h-7 text-left"><i class="fa-solid fa-circle-question mx-1 my-1"></i><span class="mx-1.5 my-1.5">Help</span></span>
+        <span class="rounded-xl  hover:bg-slate-200  w-fit h-7 text-left"><i class="fa-solid fa-exclamation xm-1 my-1"></i><span class="mx-1.5 my-1.5">Send feedback</span></span>
      </div>
         </div>
     </sidebar>
-    
+    <main>
+        <div class="w-52 h-52 mt-20 ml-32">
+            <iframe src="https://www.youtube.com/embed/bFvfqUMjvsA?si=cRmlLeW70b3aJecW" frameborder="0"></iframe>
+        </div>
+    </main>
     
 </body>
 </html>
